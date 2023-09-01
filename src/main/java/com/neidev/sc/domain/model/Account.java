@@ -21,13 +21,13 @@ public class Account {
     /**
      *  balance configuration (monetary)
      *
-     *  precision - decimal
-     *  scale - quantity of numbers
+     *  scale - decimal
+     *  precision - quantity of numbers
      *
      *  scale         precision
      *  10000000000 , 00
      */
-    @Column(nullable = false, precision = 2, scale = 13)
+    @Column(nullable = false, scale = 2, precision = 13)
     private BigDecimal balance;
     @Column(name = "additional_limit", nullable = false, precision = 2, scale = 13)
     private BigDecimal limit;
